@@ -1,5 +1,5 @@
 # opengbc
-Open source reimplementation of Game Boy Color
+Open source reimplementation of Game Boy Color using all new components
 
 
 
