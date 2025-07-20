@@ -1,0 +1,18 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "3a870878-1e85-4537-97d1-09e5db9009a0")
+	(paper "A4")
+	(title_block
+		(title "OpenGBC PCB")
+		(company "WhatWare")
+	)
+	(lib_symbols)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

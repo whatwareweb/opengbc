@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "KongFeng_CPU_KF2005")(type "KiCad")(uri "/home/ryan/Documents/kicad/game boy clone work dir/ReverseRetroLib/Gameboy/Symbols/KongFeng_CPU_KF2005.kicad_sym")(options "")(descr ""))
+)
