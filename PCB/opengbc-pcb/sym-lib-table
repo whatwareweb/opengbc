@@ -1,4 +1,8 @@
 (sym_lib_table
   (version 7)
-  (lib (name "KongFeng_CPU_KF2005")(type "KiCad")(uri "/home/ryan/Documents/kicad/game boy clone work dir/ReverseRetroLib/Gameboy/Symbols/KongFeng_CPU_KF2005.kicad_sym")(options "")(descr ""))
+  (lib (name "GameBoy_CPU_CGB_KF2007")(type "KiCad")(uri "${KIPRJMOD}/symbols/GameBoy_CPU_CGB_KF2007.kicad_sym")(options "")(descr ""))
+  (lib (name "Gekkio_CPU_Nintendo")(type "KiCad")(uri "${KIPRJMOD}/symbols/Gekkio_CPU_Nintendo.kicad_sym")(options "")(descr ""))
+  (lib (name "AS6C62256-55STIN")(type "KiCad")(uri "${KIPRJMOD}/symbols/AS6C62256-55STIN.kicad_sym")(options "")(descr ""))
+  (lib (name "gbc_cartridge")(type "KiCad")(uri "${KIPRJMOD}/symbols/gbc_cartridge.kicad_sym")(options "")(descr ""))
+  (lib (name "gbc_display")(type "KiCad")(uri "${KIPRJMOD}/symbols/gbc_display.kicad_sym")(options "")(descr ""))
 )
