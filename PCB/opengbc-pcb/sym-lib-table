@@ -5,4 +5,5 @@
   (lib (name "AS6C62256-55STIN")(type "KiCad")(uri "${KIPRJMOD}/symbols/AS6C62256-55STIN.kicad_sym")(options "")(descr ""))
   (lib (name "gbc_cartridge")(type "KiCad")(uri "${KIPRJMOD}/symbols/gbc_cartridge.kicad_sym")(options "")(descr ""))
   (lib (name "gbc_display")(type "KiCad")(uri "${KIPRJMOD}/symbols/gbc_display.kicad_sym")(options "")(descr ""))
+  (lib (name "LM4853MM_NOPB")(type "KiCad")(uri "${KIPRJMOD}/symbols/LM4853MM_NOPB.kicad_sym")(options "")(descr ""))
 )

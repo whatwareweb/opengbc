@@ -59,3 +59,7 @@ After doing that, I zoomed out on the schematic and realized how close to comple
 
 
 time spent: 5h
+# July 26 - audio system
+First thing I did today was to start the hierarchical schematic for the audio circuitry. I wanted this to be compatible with the GBC, so I needed an amp that has a stereo channel input, but a mono speaker output since the GBC has one speaker but a stereo headphone jack. I looked on TI's website for this, and found the LM4853. This chip fits the bill perfectly. I looked at the typical application schematic to get it set up, and cross-referenced the original GBC schematic to see the other circuitry necessary for e.g. the volume control. I also had to download the symbol off Mouser's website. The symbol I downloaded would make the schematic messy, so I cleaned up the layout.
+
+I then got started on the circuitry, basing off of the typical application but making a few important changes. One change was to adjust the gain of the amp because the GBC CPU outputs at logic level, which needs to be amplified negatively. The amp chip is still necessary though, the CPU pins can't handle enough current to drive the output.
