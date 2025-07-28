@@ -28,16 +28,26 @@ Today I started the PCB design. First thing I did was to create a new Kicad proj
 
 I then started adding the symbol for the CPU to the schematic, but it was way too tall to fit on the schematic page. Therefore, I went back and split up the symbol to be 2 separate modules so that it would fit.
 
+<img width="686" height="708" alt="Screenshot_20250720_200115" src="https://github.com/user-attachments/assets/73531541-168c-46ac-874f-71e7f5be3446" />
+
+
 Then, I added the RAM IC to the schematic. However, this presented another problem, the RAM was going to be a huge mess on the schematic with the pin positions as-is on the symbol, so I went ahead and edited that too to make it much more similar to the original GBC schematic. In the original GBC schematic, they just used a bus for the RAM, which would make the schematic much simpler, but I had never used buses before, so I looked up a tutorial on youtube. One thing that was confusing was the RAM read enable/write enable pins, because on the original GBC schematic the pin labels I think were mistyped or something, but I eventually got it figured out with the help of some of the schematics from the Leggomyfroggo mod.
 
 After making all the connections, I cross-referenced them with Natalie the Nerd's schematics, just to make sure all the pins were connected correctly.  This took a significant amount of time, but it was definitely worthit, I didn't want the whole gameboy to not work just because one of the RAM pins was connected wrong.
 
+<img width="1049" height="839" alt="Screenshot_20250720_212544" src="https://github.com/user-attachments/assets/f8fe91ce-1cc2-4076-8bc5-f8993b682f6d" />
+
 Next up was the controls. I wanted to have tactile buttons like found in the GBA SP included, but also the option for normal button membranes if desired, which I would need to add in the footprint. For now though, I needed to just add the 8 buttons required by the GBC, and wire them up to the correct pins.
+
+<img width="570" height="629" alt="Screenshot_20250721_133619" src="https://github.com/user-attachments/assets/6063250f-2b5e-4e97-8768-49c9fa10374f" />
 
 Time spent: 8h
 
 # July 21 - more schematics
 First thing I did today was to create hierarchical schematics for the EXT connector and IR port. I didn't fill them out just yet because they are not critical for functionality. I then got started creating the symbol for the cartridge connector, and hooking all of the data lines up to the CPU. 
+
+<img width="455" height="700" alt="Screenshot_20250721_200458" src="https://github.com/user-attachments/assets/c6dc2c06-abb0-4d8e-972c-8fd061803ce0" />
+
 
 I next got started on the crystal. As my GB Boy has a 25MHZ crystal and some division circuitry, I wanted to simplify the design by using a standard crystal. In Leggomyfroggo's tadboy, he used a crystal from Mouser that should work for this project as well, so I went ahead and used the same model. However, this crystal was used in a very strange way on the TBC, so I had to reverse engineer that part of the schematic. From the TBC, the crystal pinout was:
 
@@ -55,7 +65,14 @@ First I got started on figuring out which pins were actually needed for the disp
 
 After creating that symbol, I then tried to fit in onto the schematic, however it was extremely large so I decided to add it to another hierarchical schematic to leave room for other things. I then added all the circuitry which was just a couple capacitors and a bunch of no-connect pins basically, because the original GBC screen has a ton of random voltages, but modern screens don't use those. It was then a matter of adding all the schematic flags. I then realized I forgot to add the pin specifications for the symbol, so I finished that as well.
 
+<img width="255" height="765" alt="Screenshot_20250722_230507" src="https://github.com/user-attachments/assets/257e477c-f79d-4595-ad4e-a2ca87275e87" />
+
+<img width="261" height="641" alt="Screenshot_20250722_230517" src="https://github.com/user-attachments/assets/69939786-40ae-4d1f-b02c-73014b83a55c" />
+
+
 After doing that, I zoomed out on the schematic and realized how close to complete it really was, and I just needed a couple more smaller components really.
+
+<img width="1167" height="804" alt="Screenshot_20250722_233553" src="https://github.com/user-attachments/assets/34aa2b90-f271-4d47-95a7-6e646f05c87a" />
 
 
 time spent: 5h
@@ -66,15 +83,24 @@ First thing I did today was to start the hierarchical schematic for the audio ci
 
 I then got started on the circuitry, basing off of the typical application but making a few important changes. One change was to adjust the gain of the amp because the GBC CPU outputs at logic level, which needs to be amplified negatively. The amp chip is still necessary though, the CPU pins can't handle enough current to drive the output.
 
+<img width="1198" height="629" alt="Screenshot_20250727_135226" src="https://github.com/user-attachments/assets/46e197eb-8a65-4aa2-9e6f-ebd15b702377" />
+
+
 time spent: 5h
 
 
 # july 27 - A ton of miscellaneous circuitry
 First thing I did was just add a couple bypass capacitors:
 
+<img width="187" height="163" alt="Screenshot_20250727_135313" src="https://github.com/user-attachments/assets/26538e9e-6b82-4abb-ac61-bd602c9595ef" />
+
+
 then i got started on the reset circuitry. The original reset IC was of course out of production, so I had to look for an alternative, which was actually surprisingly difficult, because i had no idea what the ic would actually be called. The function of the IC is to pull the reset line low (active) on the cpu when the voltage is too low, to prevent erratic behavior by the cpu. I eventually found the kind of ic i needed, which is called an input voltage supervisor. Instead of the PST9135N, which is out of production, I went with a TPS3840 in the 3.5v variant.
 
 I first downloaded the symbol from Mouser, then read over basically the entire datasheet to figure out how to actually use the chip. After reading the datasheet, I modified the symbol again so it would be laid out nicely. I then placed the IC, but realized it would be annoying to place, so I just had to basically move the whole schematic over. After adding most of the schematics for the reset IC, i then had to calculate the delay capacitor value. I found with some research that the GBC uses an 18ms time delay for this. I used TI's formula to calculate the capacitor value which was on their datasheet, and found a value of .029uF, but .033uF caps were way cheaper and close enough so i went with that.
+
+<img width="340" height="347" alt="Screenshot_20250727_183205" src="https://github.com/user-attachments/assets/e744921d-421f-4cb1-a90b-e0741c1575b9" />
+
 
 Next up was the IR circuitry. For this, I basically copied over the original GBC schematic into my hierarchical schematic, so it wasn't terribly complicated, but the pinouts of the transistors were confusing because the manufacturer had multiple similar packages with all different pinouts.
 
@@ -87,6 +113,8 @@ I deliberated over the power section, whether I wanted to use a lipo battery and
 It was at this point when I got sidetracked, and got concerned about the crystal oscillator not working, so I reached out to Leggomyfroggo just to see what his experience was with that.
 
 After doing that, I continued on the power circuitry. The GBC power switch is custom for some reason, so I needed to create the symbol for it. I then had to create another custom symbol for the regulator board, and I then hooked that up. I changed the original schematic by putting the -15v and 13v rails as NC, as they are not needed with the IPS screen. I then added in the 3.3v LDO regulator, which was super simple, only 3 pins. Luckily I didn't have to make a footprint because it was already in the Kicad libraries.
+
+<img width="1356" height="663" alt="Screenshot_20250728_013014" src="https://github.com/user-attachments/assets/5c2c92cd-432a-437b-9449-eddab92b3a72" />
 
 
 and with that, i'm done with the schematic!!
