@@ -59,7 +59,34 @@ After doing that, I zoomed out on the schematic and realized how close to comple
 
 
 time spent: 5h
+
+
 # July 26 - audio system
 First thing I did today was to start the hierarchical schematic for the audio circuitry. I wanted this to be compatible with the GBC, so I needed an amp that has a stereo channel input, but a mono speaker output since the GBC has one speaker but a stereo headphone jack. I looked on TI's website for this, and found the LM4853. This chip fits the bill perfectly. I looked at the typical application schematic to get it set up, and cross-referenced the original GBC schematic to see the other circuitry necessary for e.g. the volume control. I also had to download the symbol off Mouser's website. The symbol I downloaded would make the schematic messy, so I cleaned up the layout.
 
 I then got started on the circuitry, basing off of the typical application but making a few important changes. One change was to adjust the gain of the amp because the GBC CPU outputs at logic level, which needs to be amplified negatively. The amp chip is still necessary though, the CPU pins can't handle enough current to drive the output.
+
+time spent: 5h
+
+
+# july 27 - A ton of miscellaneous circuitry
+First thing I did was just add a couple bypass capacitors:
+
+then i got started on the reset circuitry. The original reset IC was of course out of production, so I had to look for an alternative, which was actually surprisingly difficult, because i had no idea what the ic would actually be called. The function of the IC is to pull the reset line low (active) on the cpu when the voltage is too low, to prevent erratic behavior by the cpu. I eventually found the kind of ic i needed, which is called an input voltage supervisor. Instead of the PST9135N, which is out of production, I went with a TPS3840 in the 3.5v variant.
+
+I first downloaded the symbol from Mouser, then read over basically the entire datasheet to figure out how to actually use the chip. After reading the datasheet, I modified the symbol again so it would be laid out nicely. I then placed the IC, but realized it would be annoying to place, so I just had to basically move the whole schematic over. After adding most of the schematics for the reset IC, i then had to calculate the delay capacitor value. I found with some research that the GBC uses an 18ms time delay for this. I used TI's formula to calculate the capacitor value which was on their datasheet, and found a value of .029uF, but .033uF caps were way cheaper and close enough so i went with that.
+
+Next up was the IR circuitry. For this, I basically copied over the original GBC schematic into my hierarchical schematic, so it wasn't terribly complicated, but the pinouts of the transistors were confusing because the manufacturer had multiple similar packages with all different pinouts.
+
+Once that was done, I ran ERC and fixed a couple issues on there, and had to fix some symbols that I messed up before. Then, I moved onto the serial link port. This was another matter of copying over from the original schematic, and wasn't super complicated. I did have to create another symbol for the port though.
+
+Next up was the power circuit. I did a little trick for this, where you just add a hierarchical schematic, but it doesn't have any hierarchical pins, it's just there to separate it from the rest of the circuit. 
+
+I deliberated over the power section, whether I wanted to use a lipo battery and usb-c, or just use the original AAs, and I also looked up design documentation from TI for each of these. For some reason, TI's Li-ion charging portfolio includes basically only chips that can be i2c controlled, which are practically useless for this application. Due to this, and the fact that rechargeable NIMH batteries are honestly more convenient in my opinion, I decided to just go with the original GBC power circuitry. The original circuitry is fairly simple, and is mostly passive components. However, it relies on an extra PCB to actually provide the 5v from the 3v battery, probably to reduce switching noise since it's a boost converter.
+
+It was at this point when I got sidetracked, and got concerned about the crystal oscillator not working, so I reached out to Leggomyfroggo just to see what his experience was with that.
+
+After doing that, I continued on the power circuitry. The GBC power switch is custom for some reason, so I needed to create the symbol for it. I then had to create another custom symbol for the regulator board, and I then hooked that up. I changed the original schematic by putting the -15v and 13v rails as NC, as they are not needed with the IPS screen. I then added in the 3.3v LDO regulator, which was super simple, only 3 pins. Luckily I didn't have to make a footprint because it was already in the Kicad libraries.
+
+
+and with that, i'm done with the schematic!!

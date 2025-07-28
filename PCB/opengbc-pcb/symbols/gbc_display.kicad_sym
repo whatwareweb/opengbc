@@ -61,7 +61,7 @@
 					(type background)
 				)
 			)
-			(pin power_out line
+			(pin power_in line
 				(at -7.62 38.1 0)
 				(length 2.54)
 				(name "AGND"
