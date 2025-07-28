@@ -118,3 +118,7 @@ After doing that, I continued on the power circuitry. The GBC power switch is cu
 
 
 and with that, i'm done with the schematic!!
+
+<img width="1171" height="797" alt="image" src="https://github.com/user-attachments/assets/9f17c974-8a10-4511-a024-e79ccde729ff" />
+
+time spent: 10h
