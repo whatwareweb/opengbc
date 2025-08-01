@@ -553,7 +553,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "./a",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "opengbc-pcb.step",
