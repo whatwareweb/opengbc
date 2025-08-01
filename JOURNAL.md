@@ -179,4 +179,3 @@ time spent: 12h
 <img width="1171" height="797" alt="image" src="https://github.com/user-attachments/assets/9f17c974-8a10-4511-a024-e79ccde729ff" />
 
 time spent: 10h
->>>>>>> 43b22caa5f0c7e52d18649180fbad27002337f6d
