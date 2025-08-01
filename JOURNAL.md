@@ -121,6 +121,7 @@ After doing that, I continued on the power circuitry. The GBC power switch is cu
 
 and with that, i'm done with the schematic!!
 
+<<<<<<< HEAD
 time spent: 10h
 
 # july 28 - double check schematic, and BOM
@@ -174,3 +175,8 @@ I then routed all the pins to the display connector, and again had to do it a co
 Next, I routed all the audio portions of the board.
 
 time spent: 12h
+=======
+<img width="1171" height="797" alt="image" src="https://github.com/user-attachments/assets/9f17c974-8a10-4511-a024-e79ccde729ff" />
+
+time spent: 10h
+>>>>>>> 43b22caa5f0c7e52d18649180fbad27002337f6d
