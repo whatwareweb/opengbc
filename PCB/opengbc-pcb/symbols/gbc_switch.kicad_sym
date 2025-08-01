@@ -6,7 +6,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "SW"
 			(at 0 4.826 0)
 			(effects
 				(font
@@ -50,17 +50,6 @@
 			)
 		)
 		(symbol "PWR_SWITCH_0_1"
-			(rectangle
-				(start -4.826 0.508)
-				(end 7.62 -3.81)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(rectangle
 				(start -3.81 -1.27)
 				(end 1.27 0)
@@ -129,6 +118,17 @@
 			)
 		)
 		(symbol "PWR_SWITCH_1_1"
+			(rectangle
+				(start -4.826 0.508)
+				(end 11.43 -3.81)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
 			(pin passive line
 				(at -3.81 -6.35 90)
 				(length 2.54)
@@ -197,6 +197,24 @@
 					(effects
 						(font
 							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 -6.35 90)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "MP"
+					(effects
+						(font
+							(size 1.27 1.27)
 						)
 					)
 				)

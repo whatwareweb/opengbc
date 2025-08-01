@@ -5,6 +5,8 @@ description: "Open source Game Boy Color recreation using all new parts"
 created_at: "2025-07-15"
 ---
 
+### total time spent - 70hr
+
 # July 15 - Lots and lots and lots of research (did i mention lots of research)
 Let me explain first, so I have this Chinese knockoff Game Boy Color called the GB Boy Colour, which surprisingly uses an actual clone Game Boy Color CPU. The electronics hardware is actually surprisingly good, the only major downside is that the overall quality is just terrible, for example the plastics and such. Also, it does not improve much overall on the original Game Boy Color, for example it still uses AA batteries, and the quality of the screen is still pretty bad. There are also some quality-of-life improvements that can be made, like adding tactile buttons, adding Li-ion charging directly on the motherboard, upgrading the audio circuitry (maybe stereo speakers?), and refreshing the case design to make it more modern and thinner.
 
@@ -118,3 +120,57 @@ After doing that, I continued on the power circuitry. The GBC power switch is cu
 
 
 and with that, i'm done with the schematic!!
+
+time spent: 10h
+
+# july 28 - double check schematic, and BOM
+First thing I did today was just to double check the schematic. I double checked every connection, and I'm glad I did because I found that the cartridge port power was connected to 3.3v instead of 5v, oops. After fixing that, I started to get ready to assign footprints and edit the BOM. This is a very time consuming process because it requires looking at every single component and finding the right footprint on Mouser or wherever.
+
+During this process, I had to do some research to figure out that the GBC CPU is a 14x20mm 128-pin LQFP package with .5mm pin pitch, which luckily has a default Kicad footprint. I also realized that the library package that I was using had a great Kicad library for the buttons and battery, so I switched to using that instead of having it separate like before.
+
+For the passives, it was annoying but simple, I just had to add the Mouser PN to the bom and add the footprint.
+
+For the link port, I found an adapter for the link port to the Flipper Zero, but it had the footprint available in the library, so I downloaded that file and included it. Here's the Github link for that adapter: https://github.com/ethanpierce/flipperzero-gbc-link-adapter
+
+time spent: 7hr
+
+# july 29 - more BOM
+I am spending more time on the BOM because I had to go to sleep yesterday. idk why this is so time consuming tbh, just searching for some of the more obscure components is a pain. The only really unique thing that I had to do was to switch the symbol of the buttons and battery contacts to one in the gbc kicad library, because it had a corresponding footprint that I wanted to use.
+
+time spent: 3h
+
+# july 30 - more BOM, board layout, schematics & footprints
+Today I did even more component searching and BOM filling, and the first thing I did was the potentiometer. This was a huge pain, because I could not find any that seemed to be correct on Mouser. However, I eventually found a potentiometer that was close enough, the footprint was a little bit off but it seemed that it would theoretically work. However, the footprint was different, so I had to manually edit that.
+
+WHY DOES THE SYMBOL FIELDS EDITOR KEEP CRASHING RAAHHHHH
+
+The passives were easy but tedious as always.
+
+One thing that was very annoying was the FFC connector, because there was no 3d model or anything for the specific FFC connector for the GBC on Mouser. However, after looking around for a while, I found the footprint on the manufacturers website: https://www.amphenol-cs.com/product/62684502100ahlf.html and it also had the 3d model which was nice.
+
+Next I went through and did all of the resistors, these were slightly easier because they were all the same footprint so that made it go a lot faster.
+
+The next thing I did was look for the fuse. This gameboy needed a 1A SMD fuse, that of course the original was not being built anymore. Luckily I found a compatible fuse in Bucket mouse's repo.
+
+Next thing i needed to do was to create the footprint for the DC jack. I found a method online where you can set the transparency of the windows in KDE, which allows you to overlay boards so that you can create the footprints without having access to the original part. Using this, I overlayed the GBC board scans onto the KIcad window.
+
+Through some research on Aliexpress, i discovered that the GBC uses a 2.5x0.7mm DC barrel jack, which is very strange and nonstandard. I couldn't find barrel jacks on Mouser so I asked Google Gemini which was actually very helpful and led me to the "DC Power connectors" section on Mouser. I couldn't find it on Mouser, so looking on DIgikey I found one that looked like it should work.
+
+It was at this point that I realized I completely forgot to add the power LED indicator, so I went back into the schematic and added that.
+
+At that point, the only thing I had left to do was to add the regulator footprint, but I had to go to bed.
+
+time spent: 6h
+
+# july 31 - footprints and board layout
+First thing I did today was just finish up the footprints with the footprint for the voltage regulator board. I cross-referenced Bucket Mouse's power board footprint to recreate this footprint in Kicad. After that, that was the very last thing to do in the BOM, so I updated the PCB from the schematic. Of course there were a ton of errors, so I went through and fixed those. Once that was done, I first updated the PCB from the schematic, and then pasted in the GBC board outline from the GBC_repro_lib repo. I then overlayed the original GBC board underneath my replacement board, in order to line up the components. I did this with the KDE transparency feature I mentioned before.
+
+Then, it was just a matter of placing components. I started with the largest ICs first, and lined them up just how they were on the original GBC schematic. I then did the connectors, smaller ICS, and passives.
+
+After that, I did the routing of the PCB. I first routed the RAM, which just had a bunch of pins. I had to redo it a couple times to get a good alignment.
+
+I then routed all the pins to the display connector, and again had to do it a couple times to get it all right, the capacitor in the middle was a pain to deal with. I also routed a whole bunch of passives to the right.
+
+Next, I routed all the audio portions of the board.
+
+time spent: 12h

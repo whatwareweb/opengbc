@@ -52,7 +52,7 @@
 		(symbol "DISP_FFC_1_1"
 			(rectangle
 				(start -5.08 40.64)
-				(end 5.08 -106.68)
+				(end 5.08 -123.19)
 				(stroke
 					(width 0)
 					(type solid)
@@ -954,6 +954,24 @@
 					)
 				)
 				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 0 -125.73 90)
+				(length 2.54)
+				(name "Shield"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "SH"
 					(effects
 						(font
 							(size 1.27 1.27)

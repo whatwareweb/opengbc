@@ -10,4 +10,7 @@
   (lib (name "EXT_CONN")(type "KiCad")(uri "${KIPRJMOD}/symbols/EXT_CONN.kicad_sym")(options "")(descr ""))
   (lib (name "gbc_switch")(type "KiCad")(uri "${KIPRJMOD}/symbols/gbc_switch.kicad_sym")(options "")(descr ""))
   (lib (name "gbc_reg")(type "KiCad")(uri "${KIPRJMOD}/symbols/gbc_reg.kicad_sym")(options "")(descr ""))
+  (lib (name "gbc_buttons")(type "KiCad")(uri "${KIPRJMOD}/symbols/gbc_buttons.kicad_sym")(options "")(descr ""))
+  (lib (name "gbc_volume")(type "KiCad")(uri "${KIPRJMOD}/symbols/gbc_volume.kicad_sym")(options "")(descr ""))
+  (lib (name "gbc_dcjack")(type "KiCad")(uri "${KIPRJMOD}/symbols/gbc_dcjack.kicad_sym")(options "")(descr ""))
 )

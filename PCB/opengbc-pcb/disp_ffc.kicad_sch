@@ -194,7 +194,7 @@
 			(symbol "DISP_FFC_1_1"
 				(rectangle
 					(start -5.08 40.64)
-					(end 5.08 -106.68)
+					(end 5.08 -123.19)
 					(stroke
 						(width 0)
 						(type solid)
@@ -1096,6 +1096,24 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -125.73 90)
+					(length 2.54)
+					(name "Shield"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "SH"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2162,7 +2180,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 139.3952 54.61 0)
 			(effects
 				(font
@@ -2181,6 +2199,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 138.43 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" " 81-GRM033R61C104KE4D "
 			(at 138.43 50.8 0)
 			(effects
 				(font
@@ -2401,6 +2428,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 162.56 191.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "894c8921-24ff-452d-9a63-c60bad1ae610")
+		(property "Reference" "#PWR069"
+			(at 162.56 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 162.56 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 162.56 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 162.56 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9acbca07-0572-40c3-b2af-1f5d47505a8f")
+		)
+		(instances
+			(project ""
+				(path "/3a870878-1e85-4537-97d1-09e5db9009a0/c4a329d8-d5ce-4d4d-ae4b-d07fca2cf265"
+					(reference "#PWR069")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "gbc_display:DISP_FFC")
 		(at 162.56 66.04 0)
 		(unit 1)
@@ -2428,7 +2521,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "gbc_repro_lib:AMPHENOL_62684-502100AHLF"
 			(at 162.56 66.04 0)
 			(effects
 				(font
@@ -2447,6 +2540,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 162.56 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" " 649-62684-502100AHLF "
 			(at 162.56 66.04 0)
 			(effects
 				(font
@@ -2604,6 +2706,9 @@
 		)
 		(pin "30"
 			(uuid "00ecd0af-297a-48f9-83a7-d08c35c74efb")
+		)
+		(pin "SH"
+			(uuid "e51096de-cfe1-4e19-90c3-5c4fa614ee76")
 		)
 		(instances
 			(project "opengbc-pcb"

@@ -5,20 +5,20 @@
 	(uuid "be7c76c0-4714-4a4b-b6b8-50c439a05f92")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector_Audio:AudioJack3_Switch"
+		(symbol "Connector_Audio:AudioJack3_SwitchTR"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 0 11.43 0)
+				(at 0 8.89 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "AudioJack3_Switch"
-				(at 0 8.89 0)
+			(property "Value" "AudioJack3_SwitchTR"
+				(at 0 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -43,7 +43,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Audio Jack, 3 Poles (Stereo / TRS), Switched Poles (Normalling)"
+			(property "Description" "Audio Jack, 3 Poles (Stereo / TRS), Switched TR Poles (Normalling)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -52,7 +52,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "audio jack receptacle stereo headphones connector"
+			(property "ki_keywords" "audio jack receptacle stereo headphones phones TRS connector"
 				(at 0 0 0)
 				(effects
 					(font
@@ -70,7 +70,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "AudioJack3_Switch_0_1"
+			(symbol "AudioJack3_SwitchTR_0_1"
 				(rectangle
 					(start -5.08 -5.08)
 					(end -6.35 -7.62)
@@ -88,18 +88,6 @@
 					)
 					(stroke
 						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 4.826) (xy -1.016 4.318)
-					)
-					(stroke
-						(width 0)
 						(type default)
 					)
 					(fill
@@ -143,8 +131,8 @@
 					)
 				)
 				(rectangle
-					(start 2.54 6.35)
-					(end -5.08 -8.89)
+					(start 2.54 3.81)
+					(end -5.08 -10.16)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -155,22 +143,10 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 5.08) (xy -2.54 5.08) (xy -2.54 -5.08) (xy -3.175 -5.715) (xy -3.81 -5.08)
+						(xy 2.54 2.54) (xy -2.54 2.54) (xy -2.54 -5.08) (xy -3.175 -5.715) (xy -3.81 -5.08)
 					)
 					(stroke
 						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy -1.27 2.54) (xy -1.27 4.826) (xy -1.524 4.318)
-					)
-					(stroke
-						(width 0)
 						(type default)
 					)
 					(fill
@@ -202,25 +178,7 @@
 					)
 				)
 			)
-			(symbol "AudioJack3_Switch_1_1"
-				(pin passive line
-					(at 5.08 5.08 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
+			(symbol "AudioJack3_SwitchTR_1_1"
 				(pin passive line
 					(at 5.08 2.54 180)
 					(length 2.54)
@@ -231,7 +189,7 @@
 							)
 						)
 					)
-					(number "SN"
+					(number "S"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -444,451 +402,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:R_Potentiometer_Dual"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "RV"
-				(at 0 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R_Potentiometer_Dual"
-				(at 0 1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 6.35 -1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 6.35 -1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Dual potentiometer"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "resistor variable"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Potentiometer*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_Potentiometer_Dual_0_1"
-				(rectangle
-					(start -8.89 -1.524)
-					(end -3.81 -3.556)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -6.35 0) (xy -6.35 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -6.35 0) (xy -6.35 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -6.35 0) (xy -5.842 0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -6.35 -1.397) (xy -6.858 -0.254) (xy -5.842 -0.254) (xy -6.35 -1.397)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.588 0.508) (xy -5.08 0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -4.572 0.508) (xy -4.064 0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.556 0.508) (xy -3.048 0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 0.508) (xy -2.032 0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 0.508) (xy -1.016 0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.508 0.508) (xy 0 0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.508 0.508) (xy 1.016 0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.524 0.508) (xy 2.032 0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0.508) (xy 3.048 0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.556 0.508) (xy 4.064 0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 3.81 -1.524)
-					(end 8.89 -3.556)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 4.572 0.508) (xy 5.08 0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.588 0.508) (xy 6.096 0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.35 0) (xy 6.35 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.35 0) (xy 6.35 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.35 -1.397) (xy 5.842 -0.254) (xy 6.858 -0.254) (xy 6.35 -1.397)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.604 0.508) (xy 6.858 0.508) (xy 6.35 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_Potentiometer_Dual_1_1"
-				(pin passive line
-					(at -10.16 -2.54 0)
-					(length 1.27)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -6.35 2.54 270)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 -2.54 180)
-					(length 1.27)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -2.54 0)
-					(length 1.27)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 6.35 2.54 270)
-					(length 2.54)
-					(name "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 -2.54 180)
-					(length 1.27)
-					(name "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1495,6 +1008,462 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "gbc_volume:R_Potentiometer_Dual"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "RV1"
+				(at -2.286 1.524 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "10k x2"
+				(at 0.254 1.524 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "gbc_repro_lib:RK10J12R0A0B"
+				(at 6.35 -1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 6.35 -1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Dual potentiometer"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" " 688-RK10J12R0A0B "
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "resistor variable"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Potentiometer*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Potentiometer_Dual_0_1"
+				(rectangle
+					(start -8.89 -1.524)
+					(end -3.81 -3.556)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 0) (xy -6.35 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 0) (xy -6.35 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 0) (xy -5.842 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 -1.397) (xy -6.858 -0.254) (xy -5.842 -0.254) (xy -6.35 -1.397)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.588 0.508) (xy -5.08 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.572 0.508) (xy -4.064 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.556 0.508) (xy -3.048 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0.508) (xy -2.032 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy -1.016 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 0.508) (xy 0 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 0.508) (xy 1.016 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 0.508) (xy 2.032 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0.508) (xy 3.048 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.556 0.508) (xy 4.064 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 -1.524)
+					(end 8.89 -3.556)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.572 0.508) (xy 5.08 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.588 0.508) (xy 6.096 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 0) (xy 6.35 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 0) (xy 6.35 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 -1.397) (xy 5.842 -0.254) (xy 6.858 -0.254) (xy 6.35 -1.397)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.604 0.508) (xy 6.858 0.508) (xy 6.35 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Potentiometer_Dual_1_1"
+				(pin passive line
+					(at -10.16 -2.54 0)
+					(length 1.27)
+					(name "S02_IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 2.54 270)
+					(length 2.54)
+					(name "S02_OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -2.54 180)
+					(length 1.27)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -2.54 0)
+					(length 1.27)
+					(name "S01_IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 6.35 2.54 270)
+					(length 2.54)
+					(name "S02_OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -2.54 180)
+					(length 1.27)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+5V"
 			(power)
 			(pin_numbers
@@ -1769,10 +1738,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f180ce5f-eee1-4e44-8028-d4881303c238")
-	)
-	(no_connect
-		(at 209.55 83.82)
-		(uuid "292befb4-bd7d-4c97-903f-bab0b0bd6aa8")
 	)
 	(no_connect
 		(at 209.55 73.66)
@@ -2364,7 +2329,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SOP50P490X110-10N"
+		(property "Footprint" "Package_SO:VSSOP-10_3x3mm_P0.5mm"
 			(at 176.53 166.04 0)
 			(effects
 				(font
@@ -2566,7 +2531,7 @@
 				)
 			)
 		)
-		(property "Value" "510"
+		(property "Value" "510R"
 			(at 69.85 78.74 90)
 			(effects
 				(font
@@ -2574,7 +2539,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 70.104 81.534 90)
 			(effects
 				(font
@@ -2594,6 +2559,15 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 69.85 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" " 791-WR06X511JTL "
+			(at 69.85 82.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2642,7 +2616,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 59.69 82.55 0)
 			(effects
 				(font
@@ -2669,6 +2643,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" " 963-JMK107BJ105MA-T "
+			(at 59.69 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "0d482551-c036-4a6f-b1c1-80a0fefe2285")
 		)
@@ -2685,7 +2668,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Audio:AudioJack3_Switch")
+		(lib_id "Connector_Audio:AudioJack3_SwitchTR")
 		(at 214.63 81.28 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2695,7 +2678,7 @@
 		(fields_autoplaced yes)
 		(uuid "6782b3be-2a30-4e9c-a7c5-078dfd5bc36b")
 		(property "Reference" "P5"
-			(at 222.25 78.7399 0)
+			(at 222.25 76.8349 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2704,7 +2687,7 @@
 			)
 		)
 		(property "Value" "AudioJack3_Switch"
-			(at 222.25 81.2799 0)
+			(at 222.25 79.3749 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2712,7 +2695,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "gbc_repro_lib:audio_jack"
 			(at 214.63 81.28 0)
 			(effects
 				(font
@@ -2730,7 +2713,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Audio Jack, 3 Poles (Stereo / TRS), Switched Poles (Normalling)"
+		(property "Description" "Audio Jack, 3 Poles (Stereo / TRS), Switched TR Poles (Normalling)"
 			(at 214.63 81.28 0)
 			(effects
 				(font
@@ -2739,8 +2722,14 @@
 				(hide yes)
 			)
 		)
-		(pin "SN"
-			(uuid "fb9029e7-5479-4b1c-b8ae-a2dcf3c062e8")
+		(property "Mouser Part Number" " 490-SJ1-3525N "
+			(at 214.63 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "S"
 			(uuid "17e14308-f07b-46cc-85ca-74070d46b500")
@@ -2791,7 +2780,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 185.42 78.74 0)
 			(effects
 				(font
@@ -2811,6 +2800,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 185.42 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "187-CL31A107MQHNNWE"
+			(at 185.42 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2861,7 +2859,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 113.284 61.976 90)
 			(effects
 				(font
@@ -2880,6 +2878,15 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 114.3 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" " 660-RN73R1JTD2002F25 "
 			(at 114.3 62.23 0)
 			(effects
 				(font
@@ -2994,7 +3001,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 103.124 72.644 90)
 			(effects
 				(font
@@ -3014,6 +3021,15 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 102.87 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" " 279-CRGCQ0603F100K "
+			(at 102.87 73.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3061,7 +3077,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 185.42 99.06 0)
 			(effects
 				(font
@@ -3081,6 +3097,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 185.42 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "187-CL31A107MQHNNWE"
+			(at 185.42 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3253,7 +3278,7 @@
 				)
 			)
 		)
-		(property "Value" "510"
+		(property "Value" "510R"
 			(at 69.85 66.04 90)
 			(effects
 				(font
@@ -3261,7 +3286,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 70.104 68.834 90)
 			(effects
 				(font
@@ -3281,6 +3306,15 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 69.85 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" " 791-WR06X511JTL "
+			(at 69.85 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3308,7 +3342,7 @@
 		(at 167.64 62.23 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "983cc59a-dcd0-445d-9bb1-65db4f36a09c")
@@ -3330,7 +3364,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical"
 			(at 172.72 62.23 0)
 			(effects
 				(font
@@ -3350,6 +3384,15 @@
 		)
 		(property "Description" "Speaker"
 			(at 167.64 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "~"
+			(at 167.64 62.23 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3400,7 +3443,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 194.056 103.124 90)
 			(effects
 				(font
@@ -3427,6 +3470,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" " 603-AC0603JR-131KL "
+			(at 193.04 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "96401b94-00a6-44ae-9688-13cb5eaf784b")
 		)
@@ -3443,7 +3495,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Potentiometer_Dual")
+		(lib_id "gbc_volume:R_Potentiometer_Dual")
 		(at 85.09 80.01 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3469,7 +3521,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "gbc_repro_lib:gbc_volume_wheel"
 			(at 83.185 86.36 0)
 			(effects
 				(font
@@ -3496,7 +3548,16 @@
 				(hide yes)
 			)
 		)
-		(pin "6"
+		(property "Mouser Part Number" " 688-RK10J12R0A0B "
+			(at 85.09 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
 			(uuid "4c4d64e5-d86c-4c5a-a8ca-b4bd45aa956a")
 		)
 		(pin "2"
@@ -3551,7 +3612,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 175.006 91.694 90)
 			(effects
 				(font
@@ -3570,6 +3631,15 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 173.99 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" " 279-CRGCQ0603F100K "
 			(at 173.99 91.44 0)
 			(effects
 				(font
@@ -3621,7 +3691,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 113.284 112.776 90)
 			(effects
 				(font
@@ -3640,6 +3710,15 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 114.3 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" " 660-RN73R1JTD2002F25 "
 			(at 114.3 113.03 0)
 			(effects
 				(font
@@ -3691,7 +3770,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 194.056 82.804 90)
 			(effects
 				(font
@@ -3710,6 +3789,15 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 193.04 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" " 603-AC0603JR-131KL "
 			(at 193.04 82.55 0)
 			(effects
 				(font
@@ -3759,7 +3847,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 103.124 85.344 90)
 			(effects
 				(font
@@ -3779,6 +3867,15 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 102.87 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" " 279-CRGCQ0603F100K "
+			(at 102.87 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3934,7 +4031,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 209.55 86.36 0)
+		(at 209.55 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3943,7 +4040,7 @@
 		(fields_autoplaced yes)
 		(uuid "c74bbd26-872e-4776-835d-a84d2739e596")
 		(property "Reference" "#PWR029"
-			(at 209.55 92.71 0)
+			(at 209.55 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3952,7 +4049,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 209.55 91.44 0)
+			(at 209.55 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3960,7 +4057,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 209.55 86.36 0)
+			(at 209.55 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3969,7 +4066,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 209.55 86.36 0)
+			(at 209.55 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3978,7 +4075,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 209.55 86.36 0)
+			(at 209.55 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4024,7 +4121,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 59.69 69.85 0)
 			(effects
 				(font
@@ -4044,6 +4141,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 59.69 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" " 963-JMK107BJ105MA-T "
+			(at 59.69 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4225,7 +4331,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 120.65 95.25 0)
 			(effects
 				(font
@@ -4244,6 +4350,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 120.65 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" " 963-JMK107BJ105MA-T "
 			(at 120.65 95.25 0)
 			(effects
 				(font

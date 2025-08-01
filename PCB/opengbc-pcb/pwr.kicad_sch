@@ -5,451 +5,6 @@
 	(uuid "89f35d4c-2ece-4e12-879a-0fce7b9557f7")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector:Barrel_Jack_Switch"
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 5.334 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Barrel_Jack_Switch"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 1.27 -1.016 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 1.27 -1.016 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "DC Barrel Jack with an internal switch"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "DC power barrel jack connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "BarrelJack*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Barrel_Jack_Switch_0_1"
-				(rectangle
-					(start -5.08 3.81)
-					(end 5.08 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 -2.54) (xy -2.54 -2.54) (xy -1.27 -1.27) (xy 0 -2.54) (xy 2.54 -2.54) (xy 5.08 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -3.302 1.905)
-					(mid -3.9343 2.54)
-					(end -3.302 3.175)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -3.302 1.905)
-					(mid -3.9343 2.54)
-					(end -3.302 3.175)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -2.286) (xy 1.905 -1.651)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 3.683 3.175)
-					(end -3.302 1.905)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 2.54) (xy 3.81 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 0) (xy 1.27 0) (xy 1.27 -2.286) (xy 0.635 -1.651)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Barrel_Jack_Switch_1_1"
-				(pin passive line
-					(at 7.62 2.54 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -2.54 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:Battery"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "BT"
-				(at 2.54 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Battery"
-				(at 2.54 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 1.524 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 1.524 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Multiple-cell battery"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "batt voltage-source cell"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Battery_0_1"
-				(rectangle
-					(start -2.286 1.778)
-					(end 2.286 1.524)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -2.286 -1.27)
-					(end 2.286 -1.524)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -1.524 1.016)
-					(end 1.524 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -1.524 -2.032)
-					(end 1.524 -2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.778) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -0.508) (xy 0 -0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.016) (xy 0 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 3.048) (xy 1.778 3.048)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 3.556) (xy 1.27 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Battery_1_1"
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -897,157 +452,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:FerriteBead_Small"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "FB"
-				(at 1.905 1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "FerriteBead_Small"
-				(at 1.905 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Ferrite bead, small symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "L ferrite bead inductor filter"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Inductor_* L_* *Ferrite*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "FerriteBead_Small_0_1"
-				(polyline
-					(pts
-						(xy -1.8288 0.2794) (xy -1.1176 1.4986) (xy 1.8288 -0.2032) (xy 1.1176 -1.4224) (xy -1.8288 0.2794)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0.889) (xy 0 1.2954)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0 -0.7874)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "FerriteBead_Small_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:Fuse"
 			(pin_numbers
 				(hide yes)
@@ -1184,24 +588,27 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:L_Ferrite_Coupled"
+		(symbol "Device:LED"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254)
+				(offset 1.016)
 				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "L"
-				(at 0 4.445 0)
+			(property "Reference" "D"
+				(at 0 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "L_Ferrite_Coupled"
-				(at 0 -4.445 0)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1226,7 +633,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Coupled inductor with ferrite core"
+			(property "Description" "Light emitting diode"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1235,7 +642,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "inductor choke coil reactor magnetic coupled"
+			(property "Sim.Pins" "1=K 2=A"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1244,7 +651,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+			(property "ki_keywords" "LED diode"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1253,32 +660,19 @@
 					(hide yes)
 				)
 			)
-			(symbol "L_Ferrite_Coupled_0_1"
-				(circle
-					(center -3.048 1.524)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
-					(fill
-						(type outline)
-					)
+					(hide yes)
 				)
-				(circle
-					(center -3.048 -1.27)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
+			)
+			(symbol "LED_0_1"
 				(polyline
 					(pts
-						(xy -2.794 0.508) (xy -2.286 0.508)
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
 					)
 					(stroke
 						(width 0)
@@ -1290,7 +684,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.794 -0.508) (xy -2.286 -0.508)
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
 					)
 					(stroke
 						(width 0)
@@ -1302,7 +696,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.54 2.032) (xy -2.54 2.54)
+						(xy -1.27 0) (xy 1.27 0)
 					)
 					(stroke
 						(width 0)
@@ -1314,34 +708,10 @@
 				)
 				(polyline
 					(pts
-						(xy -2.54 -2.032) (xy -2.54 -2.54)
+						(xy -1.27 -1.27) (xy -1.27 1.27)
 					)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -1.524 2.032)
-					(mid -2.032 1.5262)
-					(end -2.54 2.032)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -2.54 -2.032)
-					(mid -2.032 -1.5262)
-					(end -1.524 -2.032)
-					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1350,238 +720,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.778 0.508) (xy -1.27 0.508)
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
 					)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -0.508) (xy -1.27 -0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -0.508 2.032)
-					(mid -1.016 1.5262)
-					(end -1.524 2.032)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -1.524 -2.032)
-					(mid -1.016 -1.5262)
-					(end -0.508 -2.032)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.762 0.508) (xy -0.254 0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.762 -0.508) (xy -0.254 -0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0.508 2.032)
-					(mid 0 1.5262)
-					(end -0.508 2.032)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -0.508 -2.032)
-					(mid 0 -1.5262)
-					(end 0.508 -2.032)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 0.508) (xy 0.762 0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 -0.508) (xy 0.762 -0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.524 2.032)
-					(mid 1.016 1.5262)
-					(end 0.508 2.032)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0.508 -2.032)
-					(mid 1.016 -1.5262)
-					(end 1.524 -2.032)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0.508) (xy 1.778 0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -0.508) (xy 1.778 -0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 2.54 2.032)
-					(mid 2.032 1.5262)
-					(end 1.524 2.032)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.524 -2.032)
-					(mid 2.032 -1.5262)
-					(end 2.54 -2.032)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 0.508) (xy 2.794 0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 -0.508) (xy 2.794 -0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 2.032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.032) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1589,11 +731,11 @@
 					)
 				)
 			)
-			(symbol "L_Ferrite_Coupled_1_1"
+			(symbol "LED_1_1"
 				(pin passive line
-					(at -5.08 2.54 0)
+					(at -3.81 0 0)
 					(length 2.54)
-					(name "1"
+					(name "K"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1609,27 +751,9 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
+					(at 3.81 0 180)
 					(length 2.54)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "2"
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1637,24 +761,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1838,6 +944,478 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Filter:Choke_CommonMode_FerriteCore_1243"
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "FL"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Choke_CommonMode_FerriteCore_1243"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 -8.255 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic common-mode choke, ferrite core, 1243 pin order"
+				(at 4.064 -0.762 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "signal line filter"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Choke_CommonMode_FerriteCore_1243_0_1"
+				(circle
+					(center -2.794 1.27)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.794 0.381) (xy -2.286 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.794 -0.381) (xy -2.286 -0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -2.794 -1.27)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 2.032) (xy -2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.032) (xy -2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.524 2.032)
+					(mid -2.032 1.5262)
+					(end -2.54 2.032)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.54 -2.032)
+					(mid -2.032 -1.5262)
+					(end -1.524 -2.032)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 0.381) (xy -1.27 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.381) (xy -1.27 -0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.508 2.032)
+					(mid -1.016 1.5262)
+					(end -1.524 2.032)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.524 -2.032)
+					(mid -1.016 -1.5262)
+					(end -0.508 -2.032)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 0.381) (xy -0.254 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 -0.381) (xy -0.254 -0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.508 2.032)
+					(mid 0 1.5262)
+					(end -0.508 2.032)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.508 -2.032)
+					(mid 0 -1.5262)
+					(end 0.508 -2.032)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0.381) (xy 0.762 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 -0.381) (xy 0.762 -0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.524 2.032)
+					(mid 1.016 1.5262)
+					(end 0.508 2.032)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.508 -2.032)
+					(mid 1.016 -1.5262)
+					(end 1.524 -2.032)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0.381) (xy 1.778 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -0.381) (xy 1.778 -0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.54 2.032)
+					(mid 2.032 1.5262)
+					(end 1.524 2.032)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.524 -2.032)
+					(mid 2.032 -1.5262)
+					(end 2.54 -2.032)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 0.381) (xy 2.794 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -0.381) (xy 2.794 -0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.032) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Choke_CommonMode_FerriteCore_1243_1_1"
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Regulator_Linear:LD1117S33TR_SOT223"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1965,6 +1543,468 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Transistor_BJT:Q_NPN_BEC"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Q_NPN_BEC"
+				(at 5.08 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "NPN transistor, base/emitter/collector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "BJT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Q_NPN_BEC_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy 0.635 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 0)
+					(radius 2.8194)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Q_NPN_BEC_1_1"
+				(polyline
+					(pts
+						(xy 0.635 0.635) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -0.635) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "gbc_dcjack:Barrel_Jack_Switch_MountingPin"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J1"
+				(at 0 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Barrel_Jack_Switch"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "gbc_repro_lib:SWITCHCRAFT_RAPC752SX"
+				(at 1.27 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 1.27 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "DC Barrel Jack with an internal switch and a mounting pin"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" " 502-RAPC752SX "
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "DC power barrel jack connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "BarrelJack*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Barrel_Jack_Switch_MountingPin_0_1"
+				(rectangle
+					(start -5.08 3.81)
+					(end 5.08 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 -2.54) (xy -2.54 -2.54) (xy -1.27 -1.27) (xy 0 -2.54) (xy 2.54 -2.54) (xy 5.08 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -3.302 1.905)
+					(mid -3.9343 2.54)
+					(end -3.302 3.175)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -3.302 1.905)
+					(mid -3.9343 2.54)
+					(end -3.302 3.175)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.286) (xy 1.905 -1.651)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.683 3.175)
+					(end -3.302 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 3.81 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 1.27 0) (xy 1.27 -2.286) (xy 0.635 -1.651)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Barrel_Jack_Switch_MountingPin_1_1"
+				(polyline
+					(pts
+						(xy -1.016 -4.572) (xy 1.016 -4.572)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "Mounting"
+					(at 0 -4.191 0)
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 3.048)
+					(name "MountPin"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2167,7 +2207,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
+			(property "Reference" "SW"
 				(at 0 4.826 0)
 				(effects
 					(font
@@ -2211,17 +2251,6 @@
 				)
 			)
 			(symbol "PWR_SWITCH_0_1"
-				(rectangle
-					(start -4.826 0.508)
-					(end 7.62 -3.81)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(rectangle
 					(start -3.81 -1.27)
 					(end 1.27 0)
@@ -2290,6 +2319,17 @@
 				)
 			)
 			(symbol "PWR_SWITCH_1_1"
+				(rectangle
+					(start -4.826 0.508)
+					(end 11.43 -3.81)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
 				(pin passive line
 					(at -3.81 -6.35 90)
 					(length 2.54)
@@ -2358,6 +2398,24 @@
 						(effects
 							(font
 								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 -6.35 90)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP"
+						(effects
+							(font
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -2950,12 +3008,6 @@
 		(uuid "0696bde6-9306-4e04-abc7-bb21ce938c69")
 	)
 	(junction
-		(at 127 63.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "13aadef5-49d7-4836-b6c9-af6430837564")
-	)
-	(junction
 		(at 227.33 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2966,6 +3018,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "55396b7d-8dda-492e-89ed-b3c5a04e0a0f")
+	)
+	(junction
+		(at 135.89 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "76e198b2-f856-4916-9f1e-a3d4a0b32aa9")
 	)
 	(junction
 		(at 215.9 60.96)
@@ -3005,6 +3063,10 @@
 		(at 227.33 63.5)
 		(uuid "c7793f40-d81f-4c97-b630-06b626e2ee13")
 	)
+	(no_connect
+		(at 77.47 73.66)
+		(uuid "eff8dcee-ae0f-4bbc-aea2-46ebb6bf6033")
+	)
 	(wire
 		(pts
 			(xy 176.53 57.15) (xy 176.53 63.5)
@@ -3027,16 +3089,6 @@
 	)
 	(wire
 		(pts
-			(xy 127 63.5) (xy 133.35 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d418924-6b3e-402a-ae8e-820af5bfda42")
-	)
-	(wire
-		(pts
 			(xy 248.92 100.33) (xy 259.08 100.33)
 		)
 		(stroke
@@ -3044,16 +3096,6 @@
 			(type default)
 		)
 		(uuid "39823b8c-9ad9-48a8-a360-a72f94c80b7a")
-	)
-	(wire
-		(pts
-			(xy 118.11 63.5) (xy 127 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4059c350-e63c-460c-81f9-1a15c797714d")
 	)
 	(wire
 		(pts
@@ -3077,7 +3119,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 66.04) (xy 58.42 66.04)
+			(xy 87.63 66.04) (xy 85.09 66.04)
 		)
 		(stroke
 			(width 0)
@@ -3087,7 +3129,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 63.5) (xy 113.03 63.5)
+			(xy 130.81 63.5) (xy 135.89 63.5)
 		)
 		(stroke
 			(width 0)
@@ -3107,6 +3149,16 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 119.38) (xy 162.56 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7cf4e0e9-2cb2-4358-87c4-b29b6e6a3b9a")
+	)
+	(wire
+		(pts
 			(xy 254 60.96) (xy 260.35 60.96)
 		)
 		(stroke
@@ -3117,7 +3169,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 83.82) (xy 127 83.82)
+			(xy 102.87 83.82) (xy 135.89 83.82)
 		)
 		(stroke
 			(width 0)
@@ -3127,17 +3179,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 63.5) (xy 143.51 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a916c8b7-3113-4f9c-b18a-fa0bbcdd1c1b")
-	)
-	(wire
-		(pts
-			(xy 60.96 83.82) (xy 60.96 66.04)
+			(xy 87.63 83.82) (xy 87.63 66.04)
 		)
 		(stroke
 			(width 0)
@@ -3147,7 +3189,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 83.82) (xy 60.96 83.82)
+			(xy 92.71 83.82) (xy 87.63 83.82)
 		)
 		(stroke
 			(width 0)
@@ -3167,6 +3209,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 63.5) (xy 143.51 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b63ee708-5428-481c-a7c2-9d252ed603d7")
+	)
+	(wire
+		(pts
 			(xy 167.64 57.15) (xy 167.64 72.39)
 		)
 		(stroke
@@ -3177,7 +3229,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 83.82) (xy 127 63.5)
+			(xy 135.89 83.82) (xy 135.89 63.5)
 		)
 		(stroke
 			(width 0)
@@ -3187,7 +3239,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 63.5) (xy 96.52 63.5)
+			(xy 113.03 63.5) (xy 123.19 63.5)
 		)
 		(stroke
 			(width 0)
@@ -3197,7 +3249,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 63.5) (xy 58.42 63.5)
+			(xy 102.87 63.5) (xy 85.09 63.5)
 		)
 		(stroke
 			(width 0)
@@ -3237,7 +3289,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 68.58) (xy 58.42 68.58)
+			(xy 102.87 68.58) (xy 85.09 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3274,6 +3326,116 @@
 			(type default)
 		)
 		(uuid "fab94f89-78c7-4029-a8e4-bf1516ac2c9c")
+	)
+	(hierarchical_label "B+"
+		(shape input)
+		(at 102.87 83.82 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "321af07d-4d05-46e3-9964-520dc223cc7b")
+	)
+	(hierarchical_label "B-"
+		(shape input)
+		(at 92.71 83.82 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f1574739-9716-46dc-8ed4-a3481bac87df")
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 177.8 128.27 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "077cd004-bd6d-42ed-8ae1-d4a602cec315")
+		(property "Reference" "D3"
+			(at 181.61 128.5874 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 181.61 131.1274 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D3.0mm"
+			(at 177.8 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 177.8 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 177.8 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 177.8 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" " 710-151033RS03000 "
+			(at 177.8 128.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "81bc6c67-31d8-4ad0-9abb-4ce3b0487a76")
+		)
+		(pin "1"
+			(uuid "c15ea932-f637-4eb3-b26e-c66fd5a205f5")
+		)
+		(instances
+			(project ""
+				(path "/3a870878-1e85-4537-97d1-09e5db9009a0/05ea6722-310d-443c-9776-5906b33f6fdd"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Regulator_Linear:LD1117S33TR_SOT223")
@@ -3328,6 +3490,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" " 511-LD1117S33 "
+			(at 241.3 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f557b575-4712-40ff-adba-41aeb85497d7")
 		)
@@ -3374,7 +3545,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 168.656 76.454 90)
 			(effects
 				(font
@@ -3401,6 +3572,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" " 708-RMCF0603FT750R "
+			(at 167.64 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7f17926f-9c66-479c-b9ea-937ec074459b")
 		)
@@ -3411,6 +3591,84 @@
 			(project ""
 				(path "/3a870878-1e85-4537-97d1-09e5db9009a0/05ea6722-310d-443c-9776-5906b33f6fdd"
 					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "gbc_switch:PWR_SWITCH")
+		(at 171.45 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0fc03131-08f1-46c5-82bf-2e23ed4bb171")
+		(property "Reference" "SW1"
+			(at 172.974 46.228 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PWR_SWITCH"
+			(at 172.974 48.768 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "gbc_repro_lib:gbc_PowerSwitch"
+			(at 171.45 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 171.45 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c9ae22fb-cbf3-40c7-bc89-71bf5f248f21")
+		)
+		(pin "2"
+			(uuid "98b26e59-b40f-445c-83c2-977881ed11f0")
+		)
+		(pin "3"
+			(uuid "2388e5b9-3acf-4479-924e-f21ac3356588")
+		)
+		(pin "C"
+			(uuid "6a828dd8-0271-41fd-b557-482cb608edf7")
+		)
+		(pin "MP"
+			(uuid "c56d9545-f15b-4c64-a2c2-d5367153fa43")
+		)
+		(instances
+			(project ""
+				(path "/3a870878-1e85-4537-97d1-09e5db9009a0/05ea6722-310d-443c-9776-5906b33f6fdd"
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -3549,44 +3807,33 @@
 		)
 	)
 	(symbol
-		(lib_id "gbc_switch:PWR_SWITCH")
-		(at 171.45 50.8 0)
+		(lib_id "Filter:Choke_CommonMode_FerriteCore_1243")
+		(at 107.95 66.04 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "11f78b02-552e-4bdb-9d1b-62e03bc3ff6d")
-		(property "Reference" "U5"
-			(at 180.34 50.7999 0)
+		(uuid "1c5576ac-c5eb-4405-b15a-dc0932029c75")
+		(property "Reference" "L1"
+			(at 107.823 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "PWR_SWITCH"
-			(at 180.34 53.3399 0)
+		(property "Value" "Choke_CommonMode_FerriteCore_1243"
+			(at 107.823 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 171.45 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 171.45 50.8 0)
+		(property "Footprint" "Inductor_SMD:L_CommonModeChoke_Coilcraft_1812CAN"
+			(at 107.95 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3594,8 +3841,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 171.45 50.8 0)
+		(property "Datasheet" "~"
+			(at 107.95 57.785 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3603,22 +3850,40 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "901aa97d-e227-4034-a771-1b0600ca59cb")
+		(property "Description" "Generic common-mode choke, ferrite core, 1243 pin order"
+			(at 112.014 65.278 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "3"
-			(uuid "5a4f8f69-4042-459e-a61c-f0207ef91578")
+		(property "Mouser Part Number" " 710-744235601 "
+			(at 107.95 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "2"
-			(uuid "6c4e80d3-d97f-4f29-bfbb-5749f01be16b")
+			(uuid "8e50bdf8-9a4f-4c20-9781-2cb8386c932c")
 		)
-		(pin "C"
-			(uuid "7336caf7-a322-4c13-b763-4b4a3249421a")
+		(pin "1"
+			(uuid "5d145a48-38ec-4ef2-8af3-56fddf730bd0")
+		)
+		(pin "4"
+			(uuid "184c60f8-8541-4abb-9b1a-f3c39afe1ba7")
+		)
+		(pin "3"
+			(uuid "808de807-44f3-481c-bf4e-0d7ccce6a8a2")
 		)
 		(instances
 			(project ""
 				(path "/3a870878-1e85-4537-97d1-09e5db9009a0/05ea6722-310d-443c-9776-5906b33f6fdd"
-					(reference "U5")
+					(reference "L1")
 					(unit 1)
 				)
 			)
@@ -3691,76 +3956,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:FerriteBead_Small")
-		(at 86.36 71.12 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1fc13a10-8510-4239-b60a-77e6cd789669")
-		(property "Reference" "FB8"
-			(at 88.9 69.8118 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "FerriteBead_Small"
-			(at 88.9 72.3518 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 84.582 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 86.36 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Ferrite bead, small symbol"
-			(at 86.36 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7b1dfa3c-73aa-4793-baf3-c70550f11190")
-		)
-		(pin "2"
-			(uuid "701ecdf8-93b2-445f-8ca0-bc708215d534")
-		)
-		(instances
-			(project ""
-				(path "/3a870878-1e85-4537-97d1-09e5db9009a0/05ea6722-310d-443c-9776-5906b33f6fdd"
-					(reference "FB8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 223.52 104.14 0)
 		(unit 1)
@@ -3788,7 +3983,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 224.4852 107.95 0)
 			(effects
 				(font
@@ -3807,6 +4002,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 223.52 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" " 81-GRM033R61C104KE4D "
 			(at 223.52 104.14 0)
 			(effects
 				(font
@@ -3849,7 +4053,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" ".1uF"
+		(property "Value" "0.1uF"
 			(at 259.08 137.1662 0)
 			(effects
 				(font
@@ -3858,7 +4062,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 256.54 135.89 0)
 			(effects
 				(font
@@ -3877,6 +4081,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 256.54 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" " 81-GRM033R61C104KE4D "
 			(at 256.54 135.89 0)
 			(effects
 				(font
@@ -4034,7 +4247,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 86.36 73.66 0)
+		(at 113.03 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4042,7 +4255,7 @@
 		(dnp no)
 		(uuid "3385f7a4-a70e-45fc-b5f4-4382087c19d6")
 		(property "Reference" "#PWR054"
-			(at 86.36 80.01 0)
+			(at 113.03 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4051,7 +4264,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 86.36 77.47 0)
+			(at 113.03 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4059,7 +4272,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 86.36 73.66 0)
+			(at 113.03 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4068,7 +4281,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 86.36 73.66 0)
+			(at 113.03 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4077,7 +4290,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 86.36 73.66 0)
+			(at 113.03 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4125,7 +4338,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.3"
 			(at 260.35 63.5 0)
 			(effects
 				(font
@@ -4144,6 +4357,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 260.35 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" " 710-865080142007 "
 			(at 260.35 63.5 0)
 			(effects
 				(font
@@ -4195,7 +4417,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 260.0452 107.95 0)
 			(effects
 				(font
@@ -4214,6 +4436,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 259.08 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" " 187-CL10A106KP8NNNC "
 			(at 259.08 104.14 0)
 			(effects
 				(font
@@ -4265,7 +4496,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
 			(at 143.51 76.2 0)
 			(effects
 				(font
@@ -4310,6 +4541,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" " 755-1SS355VMTE-17 "
+			(at 143.51 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "0a625211-4c67-4b15-9578-10e30a3b3709")
 		)
@@ -4326,25 +4566,26 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Barrel_Jack_Switch")
-		(at 50.8 66.04 0)
+		(lib_id "power:+5V")
+		(at 160.02 119.38 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "6f1226aa-9ef5-4157-a932-80c7baf634f1")
-		(property "Reference" "J1"
-			(at 50.8 57.15 0)
+		(uuid "63da2cff-457f-4fec-aa6f-3d06d13c0279")
+		(property "Reference" "#PWR066"
+			(at 160.02 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Value" "Barrel_Jack_Switch"
-			(at 50.8 59.69 0)
+		(property "Value" "+5V"
+			(at 160.02 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4352,7 +4593,72 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 52.07 67.056 0)
+			(at 160.02 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 160.02 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "89dda366-9907-4c65-87f3-7b26f5259a81")
+		)
+		(instances
+			(project ""
+				(path "/3a870878-1e85-4537-97d1-09e5db9009a0/05ea6722-310d-443c-9776-5906b33f6fdd"
+					(reference "#PWR066")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "gbc_dcjack:Barrel_Jack_Switch_MountingPin")
+		(at 77.47 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6f1226aa-9ef5-4157-a932-80c7baf634f1")
+		(property "Reference" "P4"
+			(at 77.47 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Barrel_Jack_Switch"
+			(at 77.47 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "gbc_repro_lib:SWITCHCRAFT_RAPC752SX"
+			(at 78.74 67.056 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4361,7 +4667,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 52.07 67.056 0)
+			(at 78.74 67.056 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4369,8 +4675,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "DC Barrel Jack with an internal switch"
-			(at 50.8 66.04 0)
+		(property "Description" "DC Barrel Jack with an internal switch and a mounting pin"
+			(at 77.47 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" " 502-RAPC752SX "
+			(at 77.47 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4387,35 +4702,38 @@
 		(pin "2"
 			(uuid "c288b831-a61d-4ac3-b50c-e3993a06f5cd")
 		)
+		(pin "MP"
+			(uuid "7cbf1995-6bbc-4ebf-9f8c-9c3151d787d9")
+		)
 		(instances
 			(project ""
 				(path "/3a870878-1e85-4537-97d1-09e5db9009a0/05ea6722-310d-443c-9776-5906b33f6fdd"
-					(reference "J1")
+					(reference "P4")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:FerriteBead_Small")
-		(at 135.89 63.5 90)
+		(lib_id "power:GND")
+		(at 181.61 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7441c17a-2b0c-4a36-b813-3d203efe6382")
-		(property "Reference" "FB7"
-			(at 135.8519 57.15 90)
+		(uuid "71aed47e-b67c-4a16-be5b-e7d82a026dce")
+		(property "Reference" "#PWR070"
+			(at 181.61 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Value" "FerriteBead_Small"
-			(at 135.8519 59.69 90)
+		(property "Value" "GND"
+			(at 183.642 57.404 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4423,7 +4741,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 135.89 65.278 90)
+			(at 181.61 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4431,8 +4749,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 135.89 63.5 0)
+		(property "Datasheet" ""
+			(at 181.61 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4440,25 +4758,22 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Ferrite bead, small symbol"
-			(at 135.89 63.5 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 181.61 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "2"
-			(uuid "14978db0-9d0e-4908-ab2b-53e9b693fabf")
 		)
 		(pin "1"
-			(uuid "22dd727e-7ea6-493b-8605-0c90f877c74f")
+			(uuid "f6a57fcc-2f91-4799-9e77-0326f2c57e6e")
 		)
 		(instances
-			(project "opengbc-pcb"
+			(project ""
 				(path "/3a870878-1e85-4537-97d1-09e5db9009a0/05ea6722-310d-443c-9776-5906b33f6fdd"
-					(reference "FB7")
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -4733,7 +5048,7 @@
 		(at 233.68 55.88 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -4754,7 +5069,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "gbc_repro_lib:GBC-PWRBD"
 			(at 233.68 55.88 0)
 			(effects
 				(font
@@ -4763,7 +5078,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 233.68 55.88 0)
 			(effects
 				(font
@@ -4773,6 +5088,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 233.68 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "~"
 			(at 233.68 55.88 0)
 			(effects
 				(font
@@ -4837,7 +5161,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Fuse:Fuse_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 152.4 65.278 90)
 			(effects
 				(font
@@ -4864,6 +5188,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" " 594-MFU0603FF01000P1 "
+			(at 152.4 63.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "275a45cc-ab16-4196-8b45-a3acb382ece4")
 		)
@@ -4874,6 +5207,87 @@
 			(project ""
 				(path "/3a870878-1e85-4537-97d1-09e5db9009a0/05ea6722-310d-443c-9776-5906b33f6fdd"
 					(reference "F1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:Q_NPN_BEC")
+		(at 175.26 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9b3cf7db-0e59-4f19-bc47-58591bd70742")
+		(property "Reference" "Q4"
+			(at 180.594 117.856 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2SC4081UB"
+			(at 180.34 120.396 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-323_SC-70"
+			(at 180.34 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 175.26 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "NPN transistor, base/emitter/collector"
+			(at 175.26 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" " 755-2SC4081UBTLR "
+			(at 175.26 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b4fc72f1-7975-4e50-ba4b-4121aadafe01")
+		)
+		(pin "1"
+			(uuid "264ac820-7808-4873-9c58-87988bb8e19b")
+		)
+		(pin "3"
+			(uuid "39d42d8e-005e-45f0-9580-00249176738d")
+		)
+		(instances
+			(project "opengbc-pcb"
+				(path "/3a870878-1e85-4537-97d1-09e5db9009a0/05ea6722-310d-443c-9776-5906b33f6fdd"
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -5079,7 +5493,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 100.33 63.5 90)
+		(at 127 63.5 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5088,7 +5502,7 @@
 		(fields_autoplaced yes)
 		(uuid "b15c1f04-8202-4dc3-9920-c29edbb7dd22")
 		(property "Reference" "F2"
-			(at 100.33 57.15 90)
+			(at 127 57.15 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5096,15 +5510,15 @@
 			)
 		)
 		(property "Value" "Fuse"
-			(at 100.33 59.69 90)
+			(at 127 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 100.33 65.278 90)
+		(property "Footprint" "Fuse:Fuse_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 127 65.278 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5113,7 +5527,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 100.33 63.5 0)
+			(at 127 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5122,7 +5536,16 @@
 			)
 		)
 		(property "Description" "Fuse"
-			(at 100.33 63.5 0)
+			(at 127 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" " 594-MFU0603FF01000P1 "
+			(at 127 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5146,25 +5569,26 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:FerriteBead_Small")
-		(at 115.57 63.5 90)
+		(lib_id "power:GND")
+		(at 177.8 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b558a2c2-8ba5-4eea-8a8d-ce4df6512323")
-		(property "Reference" "FB6"
-			(at 115.5319 57.15 90)
+		(uuid "b98820fb-7362-4a30-bee0-d8b76e5061c0")
+		(property "Reference" "#PWR067"
+			(at 177.8 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Value" "FerriteBead_Small"
-			(at 115.5319 59.69 90)
+		(property "Value" "GND"
+			(at 177.8 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5172,7 +5596,74 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 115.57 65.278 90)
+			(at 177.8 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 177.8 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6fa67a63-5447-4f20-a45d-98ba454b1336")
+		)
+		(instances
+			(project ""
+				(path "/3a870878-1e85-4537-97d1-09e5db9009a0/05ea6722-310d-443c-9776-5906b33f6fdd"
+					(reference "#PWR067")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 177.8 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "be4a54cc-498e-4f59-9bc6-44f30f69bedd")
+		(property "Reference" "R20"
+			(at 180.34 109.2199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "750R"
+			(at 180.34 111.7599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 178.816 110.744 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5181,7 +5672,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 115.57 63.5 0)
+			(at 177.8 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5189,8 +5680,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Ferrite bead, small symbol"
-			(at 115.57 63.5 0)
+		(property "Description" "Resistor, US symbol"
+			(at 177.8 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" " 708-RMCF0603FT750R "
+			(at 177.8 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5199,15 +5699,158 @@
 			)
 		)
 		(pin "2"
-			(uuid "6ceeb1bc-561b-43db-8ec1-63201abce925")
+			(uuid "1690bedc-00bc-404e-aa31-9d77d23f206a")
 		)
 		(pin "1"
-			(uuid "96f86ce3-f683-4149-bc4d-6b84d977a38d")
+			(uuid "d5ee6ac8-ec7f-4bec-ad09-f7d20fab189f")
 		)
 		(instances
 			(project ""
 				(path "/3a870878-1e85-4537-97d1-09e5db9009a0/05ea6722-310d-443c-9776-5906b33f6fdd"
-					(reference "FB6")
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 177.8 106.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c9c605aa-3f55-43bc-ab6d-6dfd04fb93c7")
+		(property "Reference" "#PWR04"
+			(at 177.8 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 177.8 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.8 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 177.8 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "272d5a8a-2da5-4544-b10c-b087ea5d2724")
+		)
+		(instances
+			(project ""
+				(path "/3a870878-1e85-4537-97d1-09e5db9009a0/05ea6722-310d-443c-9776-5906b33f6fdd"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 166.37 119.38 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cd678f1a-ee1e-4b69-a40c-8ec933433e7e")
+		(property "Reference" "R21"
+			(at 166.37 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47k"
+			(at 166.37 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 166.624 118.364 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 166.37 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 166.37 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" " 603-RC0603JR-1047KL "
+			(at 166.37 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "66928c10-a373-4489-b36f-a1668a8d63a1")
+		)
+		(pin "2"
+			(uuid "a3aaf375-f229-4c8b-82c0-3217b98ea186")
+		)
+		(instances
+			(project ""
+				(path "/3a870878-1e85-4537-97d1-09e5db9009a0/05ea6722-310d-443c-9776-5906b33f6fdd"
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -5307,7 +5950,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 204.1652 68.58 0)
 			(effects
 				(font
@@ -5326,6 +5969,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 203.2 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" " 187-CL10A475KP8NNNC "
 			(at 203.2 64.77 0)
 			(effects
 				(font
@@ -5416,33 +6068,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:L_Ferrite_Coupled")
-		(at 81.28 66.04 0)
+		(lib_id "Device:D")
+		(at 177.8 135.89 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e9c592a0-defe-41ce-85a3-f509f517b0b7")
-		(property "Reference" "L1"
-			(at 81.026 58.42 0)
+		(uuid "ddfb1023-dddc-47db-b2c2-f656060800cc")
+		(property "Reference" "D4"
+			(at 180.34 134.6199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Value" "L_Ferrite_Coupled"
-			(at 81.026 60.96 0)
+		(property "Value" "1SS355"
+			(at 180.34 137.1599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 81.28 66.04 0)
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
+			(at 177.8 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5451,7 +6105,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 81.28 66.04 0)
+			(at 177.8 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5459,8 +6113,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Coupled inductor with ferrite core"
-			(at 81.28 66.04 0)
+		(property "Description" "Diode"
+			(at 177.8 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5468,22 +6122,43 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "2cbc9b8c-07d9-4cbc-af84-0f75ca383522")
+		(property "Sim.Device" "D"
+			(at 177.8 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "3"
-			(uuid "0dd26f21-768a-4534-b940-dff855bf5128")
+		(property "Sim.Pins" "1=K 2=A"
+			(at 177.8 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "4"
-			(uuid "fd7578f4-9270-4a5a-8ca4-894f342f2c3d")
+		(property "Mouser Part Number" " 755-1SS355VMTE-17 "
+			(at 177.8 135.89 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "2"
-			(uuid "f5fa3345-0c48-4452-8413-a69a6da76f99")
+			(uuid "8fbb8a96-4694-4965-b0a3-aedff8bc9f78")
+		)
+		(pin "1"
+			(uuid "4932154a-0d2d-41ee-8bb8-926f48efe705")
 		)
 		(instances
-			(project ""
+			(project "opengbc-pcb"
 				(path "/3a870878-1e85-4537-97d1-09e5db9009a0/05ea6722-310d-443c-9776-5906b33f6fdd"
-					(reference "L1")
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -5706,7 +6381,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" ".1uF"
+		(property "Value" "0.1uF"
 			(at 248.92 137.1662 0)
 			(effects
 				(font
@@ -5715,7 +6390,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 246.38 135.89 0)
 			(effects
 				(font
@@ -5742,6 +6417,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" " 81-GRM033R61C104KE4D "
+			(at 246.38 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "cd9add0c-7baa-4ae9-b395-c0eedaf4c159")
 		)
@@ -5752,74 +6436,6 @@
 			(project "opengbc-pcb"
 				(path "/3a870878-1e85-4537-97d1-09e5db9009a0/05ea6722-310d-443c-9776-5906b33f6fdd"
 					(reference "C7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Battery")
-		(at 71.12 83.82 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "faa9c92c-84e4-4168-ad63-8e73b25ae39d")
-		(property "Reference" "BT1"
-			(at 71.6915 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2xAA 3V"
-			(at 71.6915 78.74 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 72.644 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 72.644 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Multiple-cell battery"
-			(at 71.12 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "9f31cd81-3c83-4b3c-a88e-dd085c66118c")
-		)
-		(pin "1"
-			(uuid "68abbebd-2291-4b9a-a7b1-8eaf31d77831")
-		)
-		(instances
-			(project ""
-				(path "/3a870878-1e85-4537-97d1-09e5db9009a0/05ea6722-310d-443c-9776-5906b33f6fdd"
-					(reference "BT1")
 					(unit 1)
 				)
 			)
