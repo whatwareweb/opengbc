@@ -11,7 +11,9 @@ To build this project, you'll need everything in the BOM below, as well as this 
 
 You'll also need a GBC power board, the Simple Gameboy Regulator is recommended. The BOM for this is included below as well. https://github.com/Jackv-makes/SGR
 
-<img width="710" height="905" alt="image" src="https://github.com/user-attachments/assets/24a73390-876c-4d4f-bc3d-031ef05d198c" />
+<img width="549" height="913" alt="image" src="https://github.com/user-attachments/assets/0ff9ed3e-9bc9-4fa0-a4cc-7cb5d7e3eba4" />
+
+<img width="538" height="850" alt="image" src="https://github.com/user-attachments/assets/679e05d0-5f42-4126-8872-dabf71ca4a18" />
 
 <img width="1211" height="834" alt="image" src="https://github.com/user-attachments/assets/07767eb7-c9b8-4618-b903-ca42295b6754" />
 
