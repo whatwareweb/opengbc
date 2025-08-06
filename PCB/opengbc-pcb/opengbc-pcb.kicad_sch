@@ -10805,7 +10805,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_QFP:LQFP-128_14x20mm_P0.5mm"
+		(property "Footprint" "gbc_repro_lib:LQFP-128_14x20mm_P0.5mm"
 			(at 181.61 67.31 0)
 			(effects
 				(font
@@ -12184,7 +12184,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_QFP:LQFP-128_14x20mm_P0.5mm"
+		(property "Footprint" "gbc_repro_lib:LQFP-128_14x20mm_P0.5mm"
 			(at 101.6 34.29 0)
 			(effects
 				(font

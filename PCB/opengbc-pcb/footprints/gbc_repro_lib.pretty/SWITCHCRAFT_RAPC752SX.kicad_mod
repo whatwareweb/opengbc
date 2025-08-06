@@ -280,14 +280,16 @@
 		(at 0 0)
 		(size 1.7 1.7)
 		(drill 1.7)
-		(layers "*.Cu" "*.Mask")
+		(layers "F&B.Cu" "*.Mask")
+		(clearance 0.4)
 		(uuid "53fa3106-8343-4a75-ae97-854dc3c7cfe3")
 	)
 	(pad "" np_thru_hole circle
 		(at 0 5.5)
 		(size 1.7 1.7)
 		(drill 1.7)
-		(layers "*.Cu" "*.Mask")
+		(layers "F&B.Cu" "*.Mask")
+		(clearance 0.4)
 		(uuid "68b2fff4-3592-404a-9c48-24425c24217b")
 	)
 	(pad "1" thru_hole oval
