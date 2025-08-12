@@ -338,4 +338,15 @@
 		(uuid "0432330f-c3b5-420e-829e-a35f0ce87d08")
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/3d models/RAPC752SX.step"
+		(offset
+			(xyz 0 3 3)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -180)
+		)
+	)
 )
