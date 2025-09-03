@@ -7,7 +7,7 @@ This PCB is designed to fit inside a standard Game Boy Color shell.
 
 
 
-To build this project, you'll need everything in the BOM below, as well as this PCB by ReverseRetroLib. https://github.com/jbshelton/ReverseRetroLib/tree/main/Gameboy/Cartridge%20adapter
+To build this project, you'll need everything in the BOM below, as well as this PCB by leggomyfroggo. https://oshpark.com/shared_projects/jb6p7510
 
 You'll also need a GBC power board, the Simple Gameboy Regulator is recommended. The BOM for this is included below as well. https://github.com/Jackv-makes/SGR
 
