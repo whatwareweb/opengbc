@@ -64,15 +64,7 @@
           ""
         ],
         [
-          "duplicate_footprints|101000000|116500000|98303db5-d6ff-49b2-aea7-1bb3d985dfe8|80de9dd2-c678-44c0-b450-65dd73de7e36",
-          ""
-        ],
-        [
-          "extra_footprint|101000000|116500000|98303db5-d6ff-49b2-aea7-1bb3d985dfe8|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "unconnected_items|131700000|152000000|232c2107-3971-43e1-8dca-871d9756c7c9|d49dfca4-fce1-4bef-a4be-ee4f37d333d6",
+          "unconnected_items|131700000|152000000|F.Cu|4|232c2107-3971-43e1-8dca-871d9756c7c9|d49dfca4-fce1-4bef-a4be-ee4f37d333d6",
           ""
         ]
       ],
@@ -494,6 +486,7 @@
       "single_global_label": "ignore",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
